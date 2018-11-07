@@ -61,13 +61,7 @@ def backup_files(root_old, root_new):
 
         for old, new in zip(com_add.index, com_add.new_path):
 
-            if not os.path.isdir(os.path.split(new)[0]):    
-                os.makedirs(os.path.split(new)[0])
-                shutil.copy2(old, new)
-                print(f'1. add file {new}')
-            else:
-                shutil.copy2(old, new)
-                print(f'2. add file {new}')
+
 
     '''复制修改过的文件'''            
     if len(fuse[fuse['old_times'] > fuse['new_times']]) != 0:

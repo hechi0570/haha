@@ -12,7 +12,7 @@ class BakFile():
         self.gen_path()        
 
 
-    def gen_path(self):
+    def gen_path(self): # kdkdkdkdkkd
         '''生成目录列表'''
         self.root_old = []
         self.root_new = []
